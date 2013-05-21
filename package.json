@@ -1,0 +1,45 @@
+{
+  "name": "ball-morphology",
+  "version": "0.0.0",
+  "description": "Morphological operations with ball shaped structuring elements",
+  "main": "morphology.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "distance-transform": "~0.0.0",
+    "ndarray-ops": "~0.1.3",
+    "ndarray": "~0.2.3",
+    "typedarray-pool": "~0.1.1"
+  },
+  "devDependencies": {
+    "get-pixels": "~0.1.0",
+    "save-pixels": "~0.1.2",
+    "tap": "~0.4.3"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/ball-morphology.git"
+  },
+  "keywords": [
+    "ball",
+    "morphology",
+    "dilate",
+    "erode",
+    "open",
+    "close",
+    "mathematical",
+    "image",
+    "volume",
+    "binary",
+    "vision"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "f8ba08ce05a875e06dbc344210969f32c1cdb186"
+}

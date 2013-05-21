@@ -18,7 +18,7 @@ require("get-pixels")("bwimage.png", function(err, data) {
 
 Which gives us the following array:
 
-<img src="example/bwimage.png">
+<img src="https://raw.github.com/mikolalysenko/ball-morphology/master/example/bwimage.png">
 
 We can dilate the image using the following command:
 
@@ -28,7 +28,7 @@ morphology.dilate(r, 1)
 
 Which produces the following result:
 
-<img src="example/dilate.png">
+<img src="https://raw.github.com/mikolalysenko/ball-morphology/master/example/dilate.png">
 
 Similarly, we can also perform an erosion:
 
@@ -38,7 +38,7 @@ morphology.erode(r, 1)
 
 Giving the result:
 
-<img src="example/erode.png">
+<img src="https://raw.github.com/mikolalysenko/ball-morphology/master/example/erode.png">
 
 For convenience, openings and closing are also implemented:
 
@@ -47,9 +47,9 @@ morphology.open(r, 1)
 morphology.close(r, 1)
 ```
 
-<img src="example/open.png">
+<img src="https://raw.github.com/mikolalysenko/ball-morphology/master/example/open.png">
 
-<img src="example/close.png">
+<img src="https://raw.github.com/mikolalysenko/ball-morphology/master/example/close.png">
 
 
 ## Install

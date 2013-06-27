@@ -7,9 +7,9 @@ var pool = require("typedarray-pool")
 
 function dilate(array, radius, p) {
   //Fix data type first
-  var t = ndarray.dtype(array)
+  var t = array.dtype || ndarray.dtype(array)
   if(!(t === "float32" || t === "float64")) {
-    var scratch = pool.mallocDouble(ndarray.size(array))
+    var scratch = pool.mallocDouble((array.size || ndarray.size(array))|0)
       , tmp = ndarray(scratch, array.shape.slice(0))
     ops.assign(tmp, array)
     dilate(tmp, radius, p)
